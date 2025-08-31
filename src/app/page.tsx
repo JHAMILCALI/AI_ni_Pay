@@ -1,14 +1,12 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-
+import ConnectWalletButton from '@/lib/ConnectWalletButton';
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -78,6 +76,7 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <ConnectWalletButton />
         </nav>
       </header>
 
