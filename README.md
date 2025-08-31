@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-ni Pay
 
-## Getting Started
+AI-ni Pay is a Web3 platform that combines **artificial intelligence** with **blockchain technology** to make digital payments as simple as saying the recipient's name. Our goal is to simplify the crypto payment experience, eliminating long addresses and confusing processes.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Main Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend (Next.js V0 + Tailwind CSS)
+The AI-ni Pay frontend was built with **Next.js V0** using the `app/` directory and **Tailwind CSS** for modern and responsive styling. It includes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Dynamic Navbar**
+   - Changes background and adds shadow on scroll.
+   - Navigation sections: Home, About, Features, Team.
+   - Wallet connection button (MetaMask) via `ConnectWalletButton`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Hero Section**
+   - Animated background with gradient and blurred circular elements.
+   - Titles with gradient text and striking visuals.
+   - Interactive buttons: *Try Demo* and *Watch Demo*.
 
-## Learn More
+3. **Statistics**
+   - Panel showing metrics like transactions, accuracy, processing time, and availability.
+   - Hover effects and animations for engagement.
 
-To learn more about Next.js, take a look at the following resources:
+4. **About Section**
+   - Explains the current problems in Web3 payments.
+   - Shows AI-ni Pay’s solution: fast, simple payments using only the recipient’s name.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Features Section**
+   - Cards highlighting main functionalities:
+     - Simplicity
+     - Fast and efficient network
+     - Minimal learning curve
+     - Intuitive for all users
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+6. **How It Works**
+   - 3-step payment process:
+     1. Speak naturally to indicate a payment.
+     2. AI processes the transaction.
+     3. Confirm instantly in MetaMask.
 
-## Deploy on Vercel
+7. **Team Section**
+   - Displays team members with photos, names, and roles.
+   - Interactive hover cards.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+8. **Call to Action (CTA)**
+   - Final section inviting users to get started or learn more.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+9. **Footer**
+   - Copyright information and branding.
+
+---
+
+## ⚡ Technologies Used
+
+- **Next.js V0 (React)**  
+- **Tailwind CSS**  
+- **React Hooks** (`useState`, `useEffect`)  
+- **Next/Image** for image optimization  
+- **Reusable components** (Wallet button)  
+- **CSS Animations and Gradients** for modern UI  
+- **Deployment on Vercel** for fast and reliable hosting
+
+---
+
+## 🖥 How the App Works
+
+1. On landing, users see the **main page** with animations, statistics, and CTAs.
+2. Users can **navigate** through sections using the navbar.
+3. **Connect Wallet** button allows connecting MetaMask and simulating payments.
+4. Sections explain:
+   - Problems with the current Web3 payment system.
+   - AI-ni Pay’s solutions.
+   - Key features and payment steps.
+   - Development team.
+5. The interface is **responsive**, interactive, and visually modern, making the Web3 experience **user-friendly**.
+
+---
+
+
+yaml
+Copiar código
+
+---
+
+## 🚀 Next Steps
+
+- Integrate real blockchain payments (Base Network).  
+- Enhance animations and user experience.  
+- Add more AI features to automate payments and suggestions.  
+- Optimize Vercel deployment and app performance.
+
+---
+
+## 📦 Deployment
+
+The project is deployed on **Vercel**, allowing fast updates and reliable hosting:  
+
+
+yaml
+Copiar código
+
+---
+
+**AI-ni Pay** — Making Web3 payments **human-friendly**.
