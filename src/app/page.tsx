@@ -15,8 +15,8 @@ export default function HomePage() {
 
   const features = [
     {
-      title: "Natural Language",
-      desc: "Simply say 'Pay María 20 USDC' and we handle the rest",
+      title: "Simplicity",
+      desc: "Make payments using only a name or voice command.",
       icon: "🗣️"
     },
     {
@@ -180,7 +180,7 @@ export default function HomePage() {
               <div className="bg-green-50 border-l-4 border-green-400 p-6 rounded-r-lg">
                 <h4 className="font-semibold text-green-800 mb-2">Our Solution</h4>
                 <ul className="text-green-700 space-y-2">
-                  <li>• "Pay María 50 USDC" - that's it</li>
+                  <li>• &quot;Pay María 50 USDC&quot; - that&apos;s it</li>
                   <li>• AI-powered name recognition</li>
                   <li>• SAMA identity validation</li>
                   <li>• One-click confirmation</li>
@@ -237,9 +237,9 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { step: "01", title: "Speak Naturally", desc: "Just say or type 'Pay John 25 USDT'" },
+              { step: "01", title: "Speak Naturally", desc: "Just say or type &apos;Pay John 25 USDT&apos;" },
               { step: "02", title: "AI Processing", desc: "SAMA validates identity and prepares transaction" },
-              { step: "03", title: "One Click", desc: "Confirm in MetaMask and you're done!" }
+              { step: "03", title: "One Click", desc: "Confirm in MetaMask and you&apos;re done!" }
             ].map((item, i) => (
               <div key={i} className="text-center group">
                 <div className="relative mb-6">
