@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation"; // Next.js 13+ app router
+import { useRouter } from "next/navigation";
 
 interface EthereumProvider {
-  request: (args: { method: string; params?: any[] }) => Promise<any>;
-  on?: (eventName: string, handler: (...args: any[]) => void) => void;
-  removeListener?: (eventName: string, handler: (...args: any[]) => void) => void;
+  request: (args: { method: "eth_requestAccounts" }) => Promise<string[]>;
+  on?: (event: "accountsChanged", handler: (accounts: string[]) => void) => void;
+  removeListener?: (event: "accountsChanged", handler: (accounts: string[]) => void) => void;
 }
 
 declare global {
@@ -49,6 +49,7 @@ export const useMetaMask = () => {
           router.push("/users"); // opcional: redirige si cambia la cuenta
         }
       };
+
       ethereum.on("accountsChanged", handleAccountsChanged);
 
       return () => {
